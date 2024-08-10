@@ -1,0 +1,238 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class SettingsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+//        DB::table('settings')->truncate();
+
+        DB::table('settings')->insert([
+            [
+                'key' => 'site_name',
+                'category' => 'General',
+                'type' => 'text',
+                'label' => 'Site Name',
+                'value' => 'ToguMogu Admin Panel',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'footer_text',
+                'category' => 'General',
+                'type' => 'text',
+                'label' => 'Footer Text',
+                'value' => 'ToguMogu Admin Panel',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'phone',
+                'category' => 'Website',
+                'type' => 'text',
+                'label' => 'Phone Number',
+                'value' => '+880 1827 848374',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'email',
+                'category' => 'Website',
+                'type' => 'text',
+                'label' => 'Email Address',
+                'value' => 'info@togumogu.com',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'favicon',
+                'category' => 'Website',
+                'type' => 'image',
+                'label' => 'Favicon Image',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'logo',
+                'category' => 'Website',
+                'type' => 'image',
+                'label' => 'Logo Image',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'small_logo',
+                'category' => 'Website',
+                'type' => 'image',
+                'label' => 'Small Logo',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'password_edit_enabled',
+                'category' => 'User',
+                'type' => 'boolean',
+                'label' => 'Password edit enabled?',
+                'value' => 'true',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'gr_v2',
+                'category' => 'Utility',
+                'type' => 'text',
+                'label' => 'Google Recaptcha v2',
+                'value' => '6Ld-5YoUAAAAAFrS-noqDwefyxdqs24_UwTRoJDv',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'ga_id',
+                'category' => 'Utility',
+                'type' => 'text',
+                'label' => 'Google Analytics Id',
+                'value' => 'UA-142603963-1',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'ga_view_id',
+                'category' => 'Utility',
+                'type' => 'text',
+                'label' => 'Google Analytics View Id',
+                'value' => '197370125',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'ga_api_key',
+                'category' => 'Utility',
+                'type' => 'text',
+                'label' => 'Google Analytics Api Key',
+                'value' => '294499064371-ttv0nlj2qs1o0cj3a77ji387mk9016e8.apps.googleusercontent.com',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'ga_credential',
+                'category' => 'Utility',
+                'type' => 'file',
+                'label' => 'Google Analytics Credential',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'customer_statistic_refresh_enabled',
+                'category' => 'Contact',
+                'type' => 'boolean',
+                'label' => 'Customer statistic refresh enabled?',
+                'value' => 'true',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'company_title',
+                'category' => 'Contact',
+                'type' => 'text',
+                'label' => 'Company',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'company_title_bn',
+                'category' => 'Contact',
+                'type' => 'text',
+                'label' => 'Company',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'contact_phone',
+                'category' => 'Contact',
+                'type' => 'text',
+                'label' => 'Phone number',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'contact_email',
+                'category' => 'Contact',
+                'type' => 'text',
+                'label' => 'Phone email',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'contact_address',
+                'category' => 'Contact',
+                'type' => 'textarea',
+                'label' => 'Adress',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'contact_address_bn',
+                'category' => 'Contact',
+                'type' => 'textarea',
+                'label' => 'Adress',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'app_description',
+                'category' => 'Contact',
+                'type' => 'textarea',
+                'label' => 'Description',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'app_description_bn',
+                'category' => 'Contact',
+                'type' => 'textarea',
+                'label' => 'Description',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'offer_description_bn',
+                'category' => 'Offer',
+                'type' => 'textarea',
+                'label' => 'Offer Description',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'key' => 'offer_description_en',
+                'category' => 'Offer',
+                'type' => 'textarea',
+                'label' => 'Offer Description',
+                'value' => 'null',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
+    }
+}
